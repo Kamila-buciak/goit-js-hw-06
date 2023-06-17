@@ -7,21 +7,19 @@ const ingredients = [
   "Condiments",
 ];
 
-const list = document.querySelector("#ingredients");
-
-const items = [
-  "Condiments",
-  "Herbs",
-  "Tomatos",
-  "Garlic",
-  "Mushrooms",
-
+let list = document.querySelector("#ingredients");
+let items = [
   "Potatoes",
+  "Mushrooms",
+  "Garlic",
+  "Tomatos",
+  "Herbs",
+  "Condiments",
 ];
-
-items.forEach((item) => {
-  const element = document.createElement("li");
-  element.textContent = item;
-  element.classList.add("item");
-  list.prepend(element);
+let nodes = items.map((lang) => {
+  let li = document.createElement("li");
+  li.textContent = lang;
+  return li;
 });
+
+list.append(...nodes);
