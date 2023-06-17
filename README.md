@@ -1,1 +1,1 @@
-# goit-js-hw-06
+https://kamila-buciak.github.io/goit-js-hw-06/
